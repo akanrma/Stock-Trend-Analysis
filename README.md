@@ -1,14 +1,58 @@
-# Stock-Market-Trend-Analysis-Using-HMM-LSTM
+# 📈 Stock Prediction and Analysis
 
-Update: There is new version of this project, see more details on https://github.com/Yikiwi13/HMM-GMM-Timing-Strategy.git
+A Python-based machine learning project that forecasts stock price trends using deep learning models such as LSTM (Long Short-Term Memory) and RNN (Recurrent Neural Network). This project demonstrates how to preprocess historical stock data and use neural networks to capture time-dependent relationships for more accurate stock trend predictions.
 
-## Introduction
+## 🚀 Features
 
-The hidden Markov model (HMM) is a signal prediction model which has been used to predict economic regimes and stock prices. This project intends to achieve the goal of applying machine learning algrithms into stock market. The long short term memory model (LSTM) ensures that the previous information can continue to propagate backwards without disappearing as the hidden layer continuously superimposes the input sequence under the new time state.Our main purpose is to predict the ups and downs of one stock by using HMM-LSTM.<br> 
-See details in our paper: [PAPER](https://arxiv.org/abs/2104.09700)
+- ✅ Predicts future stock price trends using historical data
+- ✅ Implements LSTM and RNN models
+- ✅ Preprocessing of time-series financial data
+- ✅ Visualization of predicted vs actual trends
+- ✅ Comparison with traditional statistical models
 
-## Process
- 
-Using data from 2007-2018 in China's A share stock market, including daily price and trade volume and over 200 types of feature, we divided them into 8 types of features and make 8 HMMs. Then combined them together to predict ups and downs of stock price the next day. During which, we used GMM and XGBoost to fit the emission matrix B of continuous HMMs and used LSTM to find a better connection of X and Y. Moreover, an useful method of labeling called the reiple barrier method is well used to find relationship between hidden states and the trends of stock price.<br>
- 
- ```
+## 🧠 Technologies Used
+
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- TensorFlow / Keras
+- LSTM (Long Short-Term Memory)
+- RNN (Recurrent Neural Network)
+
+## 📂 Project Structure
+
+
+## 📊 Results
+
+Our models (especially LSTM) demonstrated **improved accuracy** over traditional statistical methods by effectively modeling the time-dependent nature of stock prices.
+
+> 📌 Note: Stock prediction is inherently uncertain. This project is for educational purposes and **not for financial trading or investment advice**.
+
+## 🛠 How to Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/akanrma/Stock-Trend-Analysis.git
+   cd Stock-Trend-Analysis
+pip install -r requirements.txt
+python src/train_lstm.py
+# or
+python src/train_rnn.py
+
+---
+
+---
+
+### ✅ `requirements.txt`
+
+```txt
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+tensorflow
+
+
+
+
